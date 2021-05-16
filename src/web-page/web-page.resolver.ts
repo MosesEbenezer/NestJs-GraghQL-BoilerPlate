@@ -13,7 +13,7 @@ export class WebPageResolver {
     return this.webPageService.getWebPage(getWebPageArgs);
   }
 
-  @Mutation(() => WebPage)
+  @Mutation(() => WebPage, { name: 'webPage' })
   getPage(@Args('getWebPageData') getWebPageData: GetWebPageInput): WebPage {
     return this.webPageService.getWebPage(getWebPageData);
   }

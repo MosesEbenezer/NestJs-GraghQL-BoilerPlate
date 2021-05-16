@@ -6,6 +6,8 @@ import { WebPageModule } from './web-page/web-page.module';
   imports: [
     GraphQLModule.forRoot({
       autoSchemaFile: true,
+      debug: true,
+      playground: true,
     }),
     WebPageModule,
   ],
